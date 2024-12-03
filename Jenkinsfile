@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {  
             steps {  
-                git credentialsId: 'd92f3b5a-7de9-493a-9d95-c41448b1e9cd', url: 'https://github.com/aalberto/node-webapp.git', branch: 'main'
+                git credentialsId: 'd92f3b5a-7de9-493a-9d95-c41448b1e9cd', url: 'https://github.com/academy-alberto/node-webapp.git', branch: 'main'
             }  
         }  
         stage('Build-Docker-Image') {
